@@ -29,11 +29,14 @@ export default makeStyles((theme) => ({
       },
       div: {
         float: 'left',
-        marginRight: '183.33px',
+        marginRight: '220px',
         width: '195px',
       },  
       footer:{
           display:'block'
+      },
+      klasa:{
+          margin:'auto'
       }  
 
       

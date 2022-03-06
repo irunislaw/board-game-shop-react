@@ -6,7 +6,7 @@ const Footer = () => {
     return (
    
 <footer className={classes.footer}>
-    
+    <div className={classes.klasa}>
         <div className={classes.div}>
             <ul type="none">
                 <li className={classes.li}><b>Zamówienia</b></li>
@@ -42,6 +42,7 @@ const Footer = () => {
                 <li className={classes.li}><b>Kontakt</b></li>
                 <li className={classes.li}><img src={kontakt} /></li>
             </ul>
+        </div>
         </div>
     </footer>
       )
