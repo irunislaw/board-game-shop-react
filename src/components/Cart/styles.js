@@ -1,6 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
+  content:{
+    backgroundColor: "#ffffff",
+  },
+  tlo:{
+backgroundColor: "#ffffff",
+  },
   toolbar: theme.mixins.toolbar,
   title: {
     marginTop: '5%',

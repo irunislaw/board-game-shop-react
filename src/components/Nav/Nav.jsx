@@ -20,7 +20,7 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 
 const przekaznik= (id) =>{
-  return "/produkt/"+id+"";
+  return "/produkt?id="+id+"";
 }
 
 
@@ -174,7 +174,7 @@ const Nav = ({total_items}) => {
 
 
          
-          <img src={logo} alt="" id='appbar1' />
+         <a href="/"> <img  component={Link} to="/" src={logo} alt="" id='appbar1' /></a>
             
           </Typography>                                                                 {/* koniec tryb telefon*/}
           <Box sx={{ flexGrow: 1, display: {xs:'none', md: 'none', lg: 'flex' } }}>     {/*tryb duzy*/}

@@ -21,7 +21,7 @@ const Cart = ( {cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
     const FilledCart = () => {
 
         return ( 
-            <main className={classes.content}>
+            <main className={classes.content} >
             <div className="{classes.toolbar}"></div>
         <Grid container  spacing={3}>
             {cart.line_items.map((item) => (
@@ -47,8 +47,8 @@ const Cart = ( {cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
 
     if(!cart.line_items) return "Loading...";
 
-    return (<div>
-        <Container>
+    return (<div className={classes.tlo}>
+        <Container id="tlokoszyk">
             <div className={classes.toolbar} />
             <Typography className={classes.title} variant="h3" gutterBottom>Your Shoping Cart</Typography>
             {!cart.line_items.length ? <EmptyCart /> : <FilledCart />}

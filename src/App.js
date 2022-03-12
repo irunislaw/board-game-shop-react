@@ -13,6 +13,7 @@ import kontakt from './assets/kontakt.png'
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './main.css';
+import Produkt from "./components/Produkt/Produkt";
  
 
 const App = () => {
