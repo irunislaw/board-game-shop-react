@@ -6,9 +6,22 @@ import Nav from './components/Nav/Nav';
 import { commerce } from './lib/commerce';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
+import { Carousel } from 'react-responsive-carousel'
+import slider from './components/slider/slider';
+import kontakt from './assets/kontakt.png'
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import './main.css';
+ 
 
 const App = () => {
-
+    const [inputText, setInputText] = useState("");
+  let inputHandler = (e) => {
+    //convert input text to lower case
+    var lowerCase = e.target.value.toLowerCase();
+    setInputText(lowerCase);
+  };
+    commerce.products.list().then((product) => console.log(product));
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState({});
    
@@ -52,10 +65,25 @@ const App = () => {
     return (
         <Router>
             <div>
-                <Nav />
+                <Nav total_items={cart.total_items} />
               
                <Routes>
-                    <Route exact path="/" element={<Products products={products} onAddToCart={handleAddToCart} />}>
+                    <Route exact path="/" element={<div>
+                        {/* <CarouselProvider
+        naturalSlideWidth={50}
+        naturalSlideHeight={50}
+        totalSlides={3}
+        id="slajdy"
+      >
+        <Slider>
+          <Slide index={0}>I am the first Slide.</Slide>
+          <Slide index={1}>I am the second Slide.</Slide>
+          <Slide index={2}>I am the third Slide.</Slide>
+        </Slider>
+        
+      </CarouselProvider> */}
+     
+                    <Products products={products} onAddToCart={handleAddToCart} /></div>}>
                        
                     </Route>
                     <Route exact path="/cart" element={<Cart 
