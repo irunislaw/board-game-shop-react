@@ -21,7 +21,7 @@ const Cart = ( {cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart
     const FilledCart = () => {
 
         return ( 
-            <main className={classes.content}>
+            <main className={classes.content} >
             <div className="{classes.toolbar}"></div>
         <Grid container  spacing={3}>
             {cart.line_items.map((item) => (
