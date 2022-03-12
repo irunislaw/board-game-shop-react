@@ -20,7 +20,7 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 
 const przekaznik= (id) =>{
-  return "/produkt/"+id+"";
+  return "/produkt?id="+id+"";
 }
 
 

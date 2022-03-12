@@ -12,6 +12,7 @@ import kontakt from './assets/kontakt.png'
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './main.css';
+import Produkt from "./components/Produkt/Produkt";
  
 
 const App = () => {
@@ -86,6 +87,7 @@ const App = () => {
                     <Products products={products} onAddToCart={handleAddToCart} /></div>}>
                        
                     </Route>
+                   <Route path="/produkt*" element={<Produkt />}></Route>
                     <Route exact path="/cart" element={<Cart 
                     cart={cart} 
                     handleUpdateCartQty={handleUpdateCartQty} 

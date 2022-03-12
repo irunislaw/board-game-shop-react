@@ -4,6 +4,9 @@ export default makeStyles((theme) => ({
   content:{
     backgroundColor: "#ffffff",
   },
+  tlo:{
+backgroundColor: "#ffffff",
+  },
   toolbar: theme.mixins.toolbar,
   title: {
     marginTop: '5%',
