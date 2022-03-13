@@ -123,22 +123,22 @@ const Nav = ({total_items}) => {
             >
              
                 <MenuItem  onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Gry planszowe</Typography>
+                 <a id="a" href="/Katalog?querry=gry-planszowe"> <Typography textAlign="center">Gry planszowe</Typography></a>
                 </MenuItem>
                 <MenuItem  onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Gry karciane</Typography>
+                <a id="a" href="/Katalog?querry=gry-karciane"><Typography textAlign="center">Gry karciane</Typography></a>
                 </MenuItem>
                 <MenuItem  onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Gry figurkowe</Typography>
+                <a id="a" href="/Katalog?querry=gry-figurkowe"><Typography textAlign="center">Gry figurkowe</Typography></a>
                 </MenuItem>
                 <MenuItem  onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Podreczniki RPG</Typography>
+                <a id="a" href="/Katalog?querry=podreczniki-rpg"><Typography textAlign="center">Podreczniki RPG</Typography></a>
                 </MenuItem>
                 <MenuItem  onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Łamigłówki</Typography>
+                <a id="a" href="/Katalog?querry=lamiglowki"><Typography textAlign="center">Łamigłówki</Typography></a>
                 </MenuItem>
                 <MenuItem  onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Akcesoria</Typography>
+                <a id="a" href="/Katalog?querry=akcesoria"> <Typography textAlign="center">Akcesoria</Typography></a>
                 </MenuItem>
 
                 
@@ -288,15 +288,15 @@ const Nav = ({total_items}) => {
             display: {xs:'none', md: 'none', lg: 'flex' }}}>
               <a id="a" href="/Katalog?querry=gry-planszowe">Gry planszowe</a>
               <div id='kreska' />
-              <a id="a">Gry karciane</a>
+              <a id="a" href="/Katalog?querry=gry-karciane">Gry karciane</a>
               <div id='kreska' />
-              <a id="a">Gry figurkowe</a>
+              <a id="a" href="/Katalog?querry=gry-figurkowe">Gry figurkowe</a>
               <div id='kreska' />
-              <a id="a">Podręczniki RPG</a>
+              <a id="a" href="/Katalog?querry=podreczniki-rpg">Podręczniki RPG</a>
               <div id='kreska' />
-              <a id="a">Łamigłówki</a>
+              <a id="a" href="/Katalog?querry=lamiglowki">Łamigłówki</a>
               <div id='kreska' />
-              <a id="a">Akcesoria</a>
+              <a id="a" href="/Katalog?querry=akcesoria">Akcesoria</a>
               
 
 
