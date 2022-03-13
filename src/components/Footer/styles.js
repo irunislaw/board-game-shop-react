@@ -33,7 +33,8 @@ export default makeStyles((theme) => ({
         width: '195px',
       },  
       footer:{
-          display:'block'
+          display:'block',
+          marginLeft:'Auto'
       },
       klasa:{
           margin:'auto'

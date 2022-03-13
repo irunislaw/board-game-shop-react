@@ -2,7 +2,7 @@ import React from "react";
 import {Grid,Typography} from "@material-ui/core";
 import Carousel from 'react-elastic-carousel'
 import Product from "./Product/Product";
-import useStyles from "./styles"
+import useStyles from "./styles";
 
 const Products = ({products, onAddToCart}) => {
     const classes = useStyles();
