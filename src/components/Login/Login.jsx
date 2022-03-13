@@ -11,7 +11,7 @@ const Login=()=>{
                 <div id="wpisuj">Login/E-mail</div>
                 <div id="wpisuj">Hasło</div>
                 <input type="button" value="Zaloguj się" id="btnn"></input>
-                <div id="nie">Nie masz jeszcze konta? <a id="zar">Zarejestruj się</a> już dziś!</div>
+                <div id="nie">Nie masz jeszcze konta? <a id="zar" href="/register">Zarejestruj się</a> już dziś!</div>
                 <hr></hr>
                 <div id="albo">Albo zaloguj się za pomocą</div>
                 <div id="fb">

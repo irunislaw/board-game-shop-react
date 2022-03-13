@@ -309,12 +309,12 @@ const Nav = ({total_items}) => {
             <Badge badgeContent={total_items} color="secondary">
             <svg xmlns="http://www.w3.org/2000/svg"id="img" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-Cart"><path d="M5 7h13.79a2 2 0 0 1 1.99 2.199l-.6 6A2 2 0 0 1 18.19 17H8.64a2 2 0 0 1-1.962-1.608L5 7z"/><path d="M5 7l-.81-3.243A1 1 0 0 0 3.22 3H2"/><path d="M8 21h2"/><path d="M16 21h2"/></svg>
             </Badge>
-          </IconButton>
-        
+        </IconButton>
+        <a href="/login" id="logowanko"> 
         
           
 <svg xmlns="http://www.w3.org/2000/svg"id="img" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ai ai-Person"><circle cx="12" cy="7" r="5"/><path d="M17 14h.352a3 3 0 0 1 2.976 2.628l.391 3.124A2 2 0 0 1 18.734 22H5.266a2 2 0 0 1-1.985-2.248l.39-3.124A3 3 0 0 1 6.649 14H7"/></svg>
-          
+          </a>
           
           
           

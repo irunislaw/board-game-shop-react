@@ -40,6 +40,9 @@ text-decoration: none;
 *{
     font-family: 'Lato', sans-serif;
 }
+#logowanko{
+  color: black;
+}
 #img{
    
 margin-left:20px
