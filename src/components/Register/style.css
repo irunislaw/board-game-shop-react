@@ -1,0 +1,48 @@
+#tlo{
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+}
+#register{
+    width: 675px;
+    height: 500px;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#rejNap{
+    font-family: 'Lato', sans-serif;
+    font-size:50px;
+}
+#wpisac{
+    background-color: #F6F6F6;
+    width: 550px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #CDCDCD;
+    border-radius: 15px;
+    margin-top:20px;
+}
+#guzior{
+    background: #FFB30F;
+    border-radius: 999px;
+    box-shadow: #FFB30F 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    margin-top: 10px;
+}

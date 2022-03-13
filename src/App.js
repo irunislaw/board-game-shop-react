@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Products from './components/Products/Products';
 import Wishlist from './components/Wishlist/Wishlist';
 import Katalog from './components/Katalog/Katalog';
+import Register from './components/Register/Register';
+import Login from './components/Login/Login';
 import Koszyk from './components/Koszyk/Koszyk';
 import Navbar from './components/Navbar/Navbar';
 import Cart from './components/Cart/Cart';
@@ -91,6 +93,8 @@ const App = () => {
                        
                     </Route>
                     <Route path="/Katalog" element={<Katalog></Katalog>}/>
+                    <Route path="/Register" element={<Register></Register>}/>
+                    <Route path="/Login" element={<Login></Login>}/>
                     <Route path="/Wishlist" element={<Wishlist></Wishlist>}/>
                     <Route path="/Koszyk" element={<Koszyk></Koszyk>}/>
                     <Route path="/produkt*" element={<Produkt onAddToCart={handleAddToCart}  />}></Route>
