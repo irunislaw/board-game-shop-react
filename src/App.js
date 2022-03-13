@@ -94,7 +94,7 @@ const App = () => {
                     <Route path="/Wishlist" element={<Wishlist></Wishlist>}/>
                     <Route path="/Koszyk" element={<Koszyk></Koszyk>}/>
                     <Route path="/produkt*" element={<Produkt onAddToCart={handleAddToCart}  />}></Route>
-                    <Route exact path="/cart" element={<Cart 
+                    <Route exact path="/cart" element={<Koszyk
                     cart={cart} 
                     handleUpdateCartQty={handleUpdateCartQty} 
                     handleRemoveFromCart={handleRemoveFromCart} 

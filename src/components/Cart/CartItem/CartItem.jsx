@@ -25,4 +25,4 @@ const CartItem = ({item,handleUpdateCartQty, handleRemoveFromCart}) => {
     </div>);
 };
 
-export default CartItem;
+export default CartItem;       
