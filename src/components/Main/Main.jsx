@@ -6,7 +6,10 @@ import licznik from "../../assets/licznik.svg"
 import gwiazdki from "../../assets/gwiazdki.svg"
 import gra from "../../assets/gra.jpg"
 
-const Main = () => {
+const Main = ({products}) => {
+    const przelacznik = (id)=>{
+        return "/Produkt?id="+id+"";
+    }
   return (
     <div id="tlo1">
         <div id="slider">
@@ -36,30 +39,24 @@ const Main = () => {
           <div id="tytulNow">Nowości</div>
           <hr></hr>
           <div id="kontener">
-            <div id="nowPro">
+            {products.slice(0,4).map((item) => (
+                    <div id="nowPro">
+                        <a href={przelacznik(item.id)} id="a">
+                    <img src={item.image.url} id="zdjPro"></img><br></br>
+                    <a id="napis">{item.name}</a><br></br>
+                    <img src={gwiazdki} id="gwiazda"></img><br></br>
+                    <a id="cenaaa">{item.price.formatted_with_symbol}</a>
+                    </a>
+                    </div>
+            ))}
+            
+            
+            {/* <div id="nowPro">
             <img src={gra} id="zdjPro"></img><br></br>
             <a id="napis">Monopoly</a><br></br>
             <img src={gwiazdki} id="gwiazda"></img><br></br>
             <a id="cenaaa">149,99zł</a>
-            </div>
-            <div id="nowPro">
-            <img src={gra} id="zdjPro"></img><br></br>
-            <a id="napis">Monopoly</a><br></br>
-            <img src={gwiazdki} id="gwiazda"></img><br></br>
-            <a id="cenaaa">149,99zł</a>
-            </div>
-            <div id="nowPro">
-            <img src={gra} id="zdjPro"></img><br></br>
-            <a id="napis">Monopoly</a><br></br>
-            <img src={gwiazdki} id="gwiazda"></img><br></br>
-            <a id="cenaaa">149,99zł</a>
-            </div>
-            <div id="nowPro">
-            <img src={gra} id="zdjPro"></img><br></br>
-            <a id="napis">Monopoly</a><br></br>
-            <img src={gwiazdki} id="gwiazda"></img><br></br>
-            <a id="cenaaa">149,99zł</a>
-            </div>
+            </div> */}
           </div>
           
         </div>

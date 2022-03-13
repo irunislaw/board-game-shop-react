@@ -75,7 +75,7 @@ const App = () => {
                 <Nav total_items={cart.total_items} />
               
                <Routes>
-                    <Route exact path="/" element={<div>
+                    <Route exact path="/all" element={<div>
                         {/* <CarouselProvider
         naturalSlideWidth={50}
         naturalSlideHeight={50}
@@ -96,7 +96,7 @@ const App = () => {
                     <Route path="/Katalog" element={<Katalog></Katalog>}/>
                     <Route path="/Register" element={<Register></Register>}/>
                     <Route path="/Login" element={<Login></Login>}/>
-                    <Route path="/Main" element={<Main></Main>}/>
+                    <Route path="/" element={<Main products={products}></Main>}/>
                     <Route path="/Katalog*" element={<Katalog products={products}></Katalog>}/>
                     <Route path="/Wishlist" element={<Wishlist></Wishlist>}/>
                     <Route path="/Koszyk" element={<Koszyk></Koszyk>}/>
