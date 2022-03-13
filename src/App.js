@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Products from './components/Products/Products';
+import Wishlist from './components/Wishlist/Wishlist';
+import Katalog from './components/Katalog/Katalog';
 import Koszyk from './components/Koszyk/Koszyk';
 import Navbar from './components/Navbar/Navbar';
 import Cart from './components/Cart/Cart';
@@ -88,6 +90,8 @@ const App = () => {
                     <Products products={products} onAddToCart={handleAddToCart} /></div>}>
                        
                     </Route>
+                    <Route path="/Katalog" element={<Katalog></Katalog>}/>
+                    <Route path="/Wishlist" element={<Wishlist></Wishlist>}/>
                     <Route path="/Koszyk" element={<Koszyk></Koszyk>}/>
                     <Route path="/produkt*" element={<Produkt onAddToCart={handleAddToCart}  />}></Route>
                     <Route exact path="/cart" element={<Cart 
