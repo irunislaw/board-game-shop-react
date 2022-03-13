@@ -89,6 +89,7 @@ const App = () => {
                        
                     </Route>
                     <Route path="/Koszyk" element={<Koszyk></Koszyk>}/>
+                    <Route path="/produkt*" element={<Produkt onAddToCart={handleAddToCart}  />}></Route>
                     <Route exact path="/cart" element={<Cart 
                     cart={cart} 
                     handleUpdateCartQty={handleUpdateCartQty} 

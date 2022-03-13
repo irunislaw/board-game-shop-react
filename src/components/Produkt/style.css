@@ -5,3 +5,77 @@
     flex-grow: 1;
     display:block;
 }
+#zdj-big{
+    width:480px;
+    height:510px;
+    
+    float:left;
+}
+#img-big{
+    width:480px;
+    height:510px;
+    float:left;
+}
+#opisik{
+    background-color:#313131;
+    color: white;
+    
+    width:592px;
+    height:576px;
+    float:left;
+    margin-left:70px;
+    
+    
+}
+#prod{
+    width:1142px;
+    height:575px;
+    margin-left: auto;
+    margin-right:auto;
+}
+#nazwa-prod{
+    margin-left:25px;
+}
+#nazwa-prod1{
+    transform: translateY(-100%);
+    margin-left:25px;
+}
+@media screen and (max-width: 600px){
+    #opisik{
+        width:100%
+
+    }
+    #zdj-big{
+        width:100%
+    }
+    
+}
+#ocena{
+    margin-left:25px;
+    transform: translateY(-150%)
+}
+#cena-opis{
+    margin-left:25px;
+    transform: translateY(-100%)
+}
+#opis-prawo{
+    margin-left:25px;
+    width:390px;
+    height:75px;
+    overflow-y: hidden;
+    transform: translateY(-50%)
+}
+#dodajkoszyk{
+    margin-left:25px;
+    margin-top:38%;
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: none !important;
+}
+#dodajzyczen{
+    margin-left: 38px;
+    margin-right: 25px;
+    margin-top:38%
+}
+#tresc{
+    width:770px;
+}
