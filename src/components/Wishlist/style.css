@@ -8,8 +8,9 @@
     height: 90px;
     border: solid 2px #404040;
     border-radius: 15px;
-    margin-top:30px;
-    margin-left: 30px;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #zdjGry{
     width:92px;
@@ -28,6 +29,7 @@
     transform: translate(17%,-200%);
 }
 #zdjSer{
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
+    transform: translate(1330%,-270%);
 }

@@ -13,6 +13,14 @@ const Wishlist=()=>{
                 <img src={serce} id="zdjSer"></img>
                 </div>
             </div>
+            <div id="okno">
+                <img src={gra} id="zdjGry"></img>
+                <div id="Nazwa">Monopoly</div>
+                <div id="cenaW">149,99zł</div>
+                <div id="ikoSer">
+                <img src={serce} id="zdjSer"></img>
+                </div>
+            </div>
         </div>
     )
 }
