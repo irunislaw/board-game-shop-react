@@ -4,6 +4,7 @@ import losowanie from "../../assets/losowanie.svg"
 import kostki from "../../assets/kostkiii.svg"
 import licznik from "../../assets/licznik.svg"
 import gwiazdki from "../../assets/gwiazdki.svg"
+import gwiazdy from "../../assets/gwiazdy.svg"
 import gra from "../../assets/gra.jpg"
 
 const Main = () => {
@@ -63,6 +64,24 @@ const Main = () => {
           </div>
           
         </div>
+        <div id="newsletter">
+            <div id="newText">Newsletter</div>
+            <div id="przegap">
+              Nie przegap żadnej promocji,<br></br>
+              zdobywaj dodatkowe rabaty.
+            </div>
+            <div id="mejl">
+              <div id="mejlText">Twój e-mail</div>
+              <input type="button" value="Zapisz się" id="btnnn"></input>
+            </div>
+            <div id="zapisz">
+              Zapisz się aby otrzymać zniżkę 10% przy pierwszym zakupie.
+            </div>
+        </div>
+        <div id="gwiazdy">
+          <img src={gwiazdy} id="gwiazdy"></img>
+        </div>
+        
         
         
 

@@ -90,3 +90,71 @@
 #kontener{
     display:flex;
 }
+#newsletter{
+    width: 700px;
+    height: 200px;
+    border: solid 2px #404040;
+    border-radius: 15px;
+    margin-top:500px;
+    margin-left: 100px;
+    float:left;
+}
+#newText{
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#przegap{
+    font-family: 'Lato';
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#mejl{
+    border-radius: 15px;
+    border: 1px solid black;
+    width:358px;
+    height:38px;
+    background-color:#F3F3F3;
+    margin-left: 20px;
+    margin-top:10px;
+}
+#mejlText{
+    margin-left:20px;
+    font-family: 'Lato';
+    font-size:16px;
+    transform: translate(0%,40%);
+}
+#btnnn{
+    background: #FFB30F;
+    border-radius: 999px;
+    box-shadow: #FFB30F 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    transform: translate(255px,-20px)
+}
+#zapisz{
+    font-family: 'Lato';
+    font-size:14px;
+    margin-top:10px;
+    margin-left: 20px;
+}
+#gwiazdy{
+    margin-top:250px;
+    margin-left: 300px;
+}
