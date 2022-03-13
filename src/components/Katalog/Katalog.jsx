@@ -33,7 +33,20 @@ const Katalog=({products})=>{
 
     
     <div id="tlo">
-        {filproducts.data && filproducts.data.map((product) =>( 
+         <Grid container justify="center" spacing={4}>
+    {filproducts.data && filproducts.data.map((product) =>( 
+        <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
+            <a href={przenoszenie(product.id)}><div id="produkt">
+                <img src={product.image.url} id="zdjPro"></img><br></br>
+                <a id="napis">{product.name}</a><br></br>
+                <img src={gwiazdki} id="gwiazdki"></img><br></br>
+                <a id="cenaaa">{product.price.formatted_with_symbol}</a>
+            </div>
+            </a>
+        </Grid>
+    ))}
+    </Grid>
+        {/* {filproducts.data && filproducts.data.map((product) =>( 
         
        
             <a href={przenoszenie(product.id)}><div id="produkt">
@@ -44,7 +57,7 @@ const Katalog=({products})=>{
             </div>
             </a>
         
-        ))}
+        ))} */}
     </div>
    
    

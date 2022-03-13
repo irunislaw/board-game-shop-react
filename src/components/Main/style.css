@@ -12,7 +12,11 @@
     transform: translate(0px, -31px);
     padding-top: 60px!important;
 }
+   #tlo{
+       min-height: 100vh!important;
+   }
    
+
 #hotShot{
     border:1px solid black;
     border-radius: 15px;

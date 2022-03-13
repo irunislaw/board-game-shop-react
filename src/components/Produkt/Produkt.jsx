@@ -24,7 +24,7 @@ const Produkt = ({onAddToCart}) => {
     return (
 
 
-    <div id="tlo">
+    <div id="tlo2">
         <br></br><br></br>
       {filproducts.data && filproducts.data.map((wynik) => (
         <div id="prod">
