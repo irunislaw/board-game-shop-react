@@ -89,12 +89,13 @@ const App = () => {
         
       </CarouselProvider> */}
      
-                    <Products products={products} onAddToCart={handleAddToCart} /></div>}>
+                    <Katalog products={products} /></div>}>
                        
                     </Route>
                     <Route path="/Katalog" element={<Katalog></Katalog>}/>
                     <Route path="/Register" element={<Register></Register>}/>
                     <Route path="/Login" element={<Login></Login>}/>
+                    <Route path="/Katalog*" element={<Katalog products={products}></Katalog>}/>
                     <Route path="/Wishlist" element={<Wishlist></Wishlist>}/>
                     <Route path="/Koszyk" element={<Koszyk></Koszyk>}/>
                     <Route path="/produkt*" element={<Produkt onAddToCart={handleAddToCart}  />}></Route>

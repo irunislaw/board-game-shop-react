@@ -2,38 +2,21 @@ import React, { useState, useEffect } from 'react';
 import "./style.css";
 import gra from "../../assets/gra.jpg"
 import {Grid,Typography} from "@material-ui/core";
-import {commerce} from "../../lib/commerce";
 import gwiazdki from "../../assets/gwiazdki.svg"
-import { Router,useLocation } from 'react-router-dom';
-
-
-const Katalog=({products})=>{
-    const [filproducts, setfilProducts] = useState([]);
-    const search = useLocation().search;
-  const id = new URLSearchParams(search).get('querry');
- 
-  const handleFilter = async () => {
-    
-   
-    const filtrowane  =await commerce.products.list({
-        category_slug: id
-    }); 
-        setfilProducts(filtrowane);
-        console.log('chujomucha');
-        console.log(filproducts);
-  };
- handleFilter();
-    console.log(id);
-    console.log(filproducts);
-
+const Filtry = ({products}) => {
     const przenoszenie=(id) => {
         return "/Produkt?id="+id+"";
     }
+
+
+
+
+
     return(
 
     
     <div id="tlo">
-        {filproducts.data && filproducts.data.map((product) =>( 
+        {filproducts.map((product) =>( 
         
        
             <a href={przenoszenie(product.id)}><div id="produkt">
@@ -46,10 +29,7 @@ const Katalog=({products})=>{
         
         ))}
     </div>
-   
-   
-        
-
     )
 }
-export default Katalog
+
+export default Filtry

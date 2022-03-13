@@ -80,6 +80,7 @@ const Nav = ({total_items}) => {
 
 
   return (
+    
     <AppBar position="static" id='appbar' color="#FFFFFF"  xs={{boxShadow:"none"}}>
       <Container maxWidth="xl" id='appbar' xs={{boxShadow:"none"}}>
         <Toolbar disableGutters id='appbar' xs={{boxShadow:"none"}}>
@@ -285,7 +286,7 @@ const Nav = ({total_items}) => {
               transform: 'translatex(-50%)',
               height: '40px',
             display: {xs:'none', md: 'none', lg: 'flex' }}}>
-              <a id="a">Gry planszowe</a>
+              <a id="a" href="/Katalog?querry=gry-planszowe">Gry planszowe</a>
               <div id='kreska' />
               <a id="a">Gry karciane</a>
               <div id='kreska' />
